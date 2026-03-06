@@ -1,0 +1,43 @@
+.PageHead {
+    border: solid #252525;
+    border-radius: 100px;
+    margin-bottom: 1%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.873);
+    color: white;
+}
+#navDes {
+    border: solid #252525;
+    border-radius: 60px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: rgba(63, 63, 63, 0.701);
+    border: solid 1px black; 
+    box-shadow: 1px 2px 2px rgb(13, 13, 13);
+}
+.navButton {
+    border: solid #252525;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: rgba(63, 63, 63, 0.701);
+    border: solid 1px black; 
+    box-shadow: 1px 2px 2px rgb(13, 13, 13);
+}
+.navButton:hover {
+    box-shadow: 1px 2px 3px rgb(13, 13, 13) inset;
+}
+.navButton a {
+    text-decoration: none;
+    color: white;
+}
+#projImg {
+    width: auto;
+    height: 25vh;
+    box-shadow: 1px 2px 2px rgb(13, 13, 13);
+
+}

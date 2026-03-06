@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cactus+Classical+Serif&family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+    <header class="PageHead">
+        <div id="navDes">
+            <h1>Portfolio</h1> 
+        </div>
+        <div class="navButton">
+            <a id="indexTab" href="index.html">Home</a>
+        </div>
+        <div class="navButton">
+            <a id="projTab" href="projects.html">Projects</a> 
+        </div>
+        <div class="navButton">
+            <a id="aboutTab" href="about.html">About</a> 
+        </div>
+        <div class="navButton">
+            <a id="ContactTab" href="contact.html">Contact</a> 
+        </div>
+        <div class="navButton">
+            <a id="Log/SignTab" href="login.html">login/Signup</a> 
+        </div>
+    </header>
+    <div class="bg-dark d-flex m-3 rounded flex-column">
+        <div class="m-1 mt-0 d-flex align-items-center justify-content-center">
+            <svg height="200" width="650">
+            <path id="lineAC" d="M 20 200 q 300 -180 600 0" fill="none"/>
+            <text style="fill: rgb(255, 255, 255); font-size: 60px; font-family: Titan One, sans-serif;">
+                <textPath href="#lineAC" textLength="80%" startOffset="60">Project Demo</textPath>
+            </text>
+            </svg>
+
+        </div>
+        <div class="m-4 mb-5 d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center">
+                <button class="navButton" id="pButtonLeft" style="margin-left: 0;" onclick="rotateImage(0)">&lt</button>
+                <img id="projImage" class="rounded border border-2 border-black" src="images/huntingSeasonProj.jpg" alt="developer" style="height: auto; width: 80%;">
+                <button class="navButton" id="pButtonRight" style="margin-left: 0;" onclick="rotateImage(1)">&gt</button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer class="mx-4 fixed-bottom">
+        <div class="row">
+            <div class="col-lg-4">
+                Terms and Conditions
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalTOS">Learn More</button>
+            </div>
+            <div class="col-lg-4">
+                Privacy Policy
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalPP">Learn More</button>
+            </div>
+            <div class="col-lg-4">
+                🍪 Cookie Policy
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalCookie">Learn More</button>
+            </div>
+        </div>
+    </footer>
+    <div id="modalTOS" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Terms and Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>The Terms and Conditions of the Website are as follows</p>
+                    <P>This document contians important information so please read carefully.</P>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum the password is 0000 dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere delectus officiis, pariatur enim perferendis eligendi repudiandae illum dolores voluptas quae eaque. Sint esse placeat quae est pariatur vel praesentium maxime!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalPP" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Privacy Policy</h4>
+                </div>
+                <div class="modal-body">
+                    <p>The Privacy Policy of the Website are as follows</p>
+                    <p>We take your privacy very seriously and as such take greate care of privacy. We also advice you be safe with your own data its a wide world web.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalCookie" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cookie Policy</h4>
+                </div>
+                <div class="modal-body">
+                    <p>The Cookie Policy of the Website are as follows</p>
+                    <p>We do not use cookies so there are no policies, but we do appreciate you taking the time to read this. If we do begin to use cookies this will be updated.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function rotateImage(rotI){
+        const images = ["images/huntingSeasonProj.jpg","images/assemblyProj.jpg","images/stegoProj.jpg"];
+        var imgElem = document.getElementById("projImage")
+        
+        if(rotI == 1){
+            //check for current elem
+            if(imgElem.src.includes(images[0])){
+                //change img to next and update buttons
+                imgElem.src = images[1];
+            }else if(imgElem.src.includes(images[1])){
+                imgElem.src = images[2];
+            }else{
+                imgElem.src = images[0];
+            }
+        }
+        if(rotI == 0){
+            if(imgElem.src.includes(images[0])){
+                imgElem.src = images[2];
+            }else if(imgElem.src.includes(images[1])){
+                imgElem.src = images[0];
+            }else{
+                imgElem.src = images[1];
+            }
+        }
+    }
+
+    function changeImg(chng){
+        if(chng == 0){
+            //move to next img and set color for buttons
+            document.getElementById("projImage").src = "images/huntingSeasonProj.jpg";
+        }else if(chng == 1){
+            document.getElementById("projImage").src = "images/assemblyProj.jpg";
+        }else{
+            document.getElementById("projImage").src = "images/stegoProj.jpg";
+        }
+    }
+
+    setInterval(() => {rotateImage(1)},10000);
+    // const currentPath = (window.location.href).substring(window.location.href.lastIndexOf('/')+1);
+    const currentPath = window.location.pathname.split("/").pop();
+    if(currentPath[0] === 'i' && currentPath[1] === 'n' && currentPath[2] === 'd' && currentPath[3] === 'e' && currentPath[4] === 'x' && currentPath[5] === '.' && currentPath[6] === 'h' && currentPath[7] === 't' && currentPath[8] === 'm' && currentPath[9] === 'l'){
+        document.getElementById("indexTab").style.color = "blue"
+    }
+</script>
+</html>

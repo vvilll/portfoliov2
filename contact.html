@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<body>
+    <header class="PageHead">
+        <div id="navDes">
+            <h1>Portfolio</h1> 
+        </div>
+        <div class="navButton">
+            <a id="indexTab" href="index.html">Home</a>
+        </div>
+        <div class="navButton">
+            <a id="projTab" href="projects.html">Projects</a> 
+        </div>
+        <div class="navButton">
+            <a id="aboutTab" href="about.html">About</a> 
+        </div>
+        <div class="navButton">
+            <a id="contactTab" href="contact.html">Contact</a> 
+        </div>
+        <div class="navButton">
+            <a href="login.html">login/Signup</a> 
+        </div>
+    </header>
+    <div class="d-flex">
+        <div class=" d-flex flex-column align-items-center bg-dark rounded text-white m-3 p-5 mb-5 w-75">
+            <h1>University of Idaho</h1>
+            <div class="embed-map-fixed">
+            <div class="embed-map-container">
+            <iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=400&hl=en&q=875%20Perimeter%20Drive%2C%20Moscow%2C%20Idaho&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a href="https://cartoongames.io" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:10px;overflow:hidden">Cartoon Network Games</a><a href="https://pokepath.org" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:10px;overflow:hidden">PokePath TD</a></div><style>.embed-map-fixed{position:relative;text-align:right;width:600px;height:400px;}.embed-map-container{overflow:hidden;background:none!important;width:600px;height:400px;}.embed-map-frame{width:600px!important;height:400px!important;}</style></div>
+        </div>
+        <div class="bg-dark rounded text-white m-3 mb-5 p-2 w-25">
+            <h1>Contact</h1>
+            <p>For any business enquiries please contact me through email. I will do my best to respond in a timely manner.</p>
+            <p>Email: will.cyber.biz@gmail.com</p>
+            <br>
+            <p>To see more of my project visit my github page. Any new work/projects I do will be posted and I plan to continually update this. Stay tuned for new projects.</p>
+            <p>Github: github.com/vvilll</p> 
+        </div>
+    </div>
+    <footer class="mx-4 fixed-bottom">
+        <div class="row">
+            <div class="col-lg-4">
+                Terms and Conditions
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalTOS">Learn More</button>
+            </div>
+            <div class="col-lg-4">
+                Privacy Policy
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalPP">Learn More</button>
+            </div>
+            <div class="col-lg-4">
+                🍪 Cookie Policy
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalCookie">Learn More</button>
+            </div>
+        </div>
+    </footer>
+    <div id="modalTOS" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Terms and Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalPP" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Privacy Policy</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalCookie" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cookie Policy</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const currentPath = window.location.pathname.split("/").pop();
+    if(currentPath[0] === 'c' && currentPath[1] === 'o' && currentPath[2] === 'n' && currentPath[3] === 't' && currentPath[4] === 'a' && currentPath[5] === 'c' && currentPath[6] === 't' && currentPath[7] === '.' && currentPath[8] === 'h' && currentPath[9] === 't' && currentPath[10] === 'm' && currentPath[11] === 'l'){
+        document.getElementById("contactTab").style.color = "blue"
+    }
+</script>
+</html>

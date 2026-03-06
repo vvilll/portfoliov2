@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<body>
+    <header class="PageHead">
+        <div id="navDes">
+            <h1>Portfolio</h1> 
+        </div>
+        <div class="navButton">
+            <a id="indexTab" href="index.html">Home</a>
+        </div>
+        <div class="navButton">
+            <a id="projTab" href="projects.html">Projects</a> 
+        </div>
+        <div class="navButton">
+            <a id="aboutTab" href="about.html">About</a> 
+        </div>
+        <div class="navButton">
+            <a id="ContactTab" href="contact.html">Contact</a> 
+        </div>
+        <div class="navButton">
+            <a id="Log/SignTab" href="login.html">login/Signup</a> 
+        </div>
+    </header>
+    <div class="d-flex">
+        <div class="bg-dark rounded text-white m-3 p-2">
+            <h1>About Me</h1>
+            <p>Currently I am studying Computer Science at NIC/UofI with a passion for cyber security and coding. I am passionate about anything related to problem solving and troubleshooting. I enjoy learning new skills and technologies and continually working towards improving.</p><br>
+            <p>A few languages I have experience with are </p>
+            <ul>
+                <li>C/C++</li>
+                <li>Python</li>
+                <li>HTML/CSS</li>
+                <li>Bash</li>
+            </ul><br>
+            <p>Additionally I have experience with tools such as </p>
+            <ul>
+                <li>Wireshark</li>
+                <li>VirtualBox</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div class="bg-dark rounded text-white m-3 p-2">
+            <h1>Interests</h1>
+            <p>Cyber Security is a sector of computer science that I focus on. It is a key part of building software and an area that I enjoying learning about.</p>
+            <p>Through some of my projects I have also done some game development which is another area of CS I enjoy. The security systems put in place to protect games from malicious users is an area of development I want to learn more about.</p><br>
+        </div>
+    </div>
+
+    <footer class="mx-4 fixed-bottom">
+        <div class="row">
+            <div class="col-lg-4">
+                Terms and Conditions
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalTOS">Learn More</button>
+            </div>
+            <div class="col-lg-4">
+                Privacy Policy
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalPP">Learn More</button>
+            </div>
+            <div class="col-lg-4">
+                🍪 Cookie Policy
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalCookie">Learn More</button>
+            </div>
+        </div>
+    </footer>
+    <div id="modalTOS" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Terms and Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalPP" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Privacy Policy</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalCookie" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cookie Policy</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const currentPath = window.location.pathname.split("/").pop();
+    if(currentPath[0] === 'a' && currentPath[1] === 'b' && currentPath[2] === 'o' && currentPath[3] === 'u' && currentPath[4] === 't' && currentPath[5] === '.' && currentPath[6] === 'h' && currentPath[7] === 't' && currentPath[8] === 'm' && currentPath[9] === 'l'){
+        document.getElementById("aboutTab").style.color = "blue"
+    }
+</script>
+</html>
